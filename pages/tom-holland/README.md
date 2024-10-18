@@ -1,3 +1,0 @@
-# Pages
-
-## Spiderman (Tom Holland)
