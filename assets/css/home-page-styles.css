@@ -131,14 +131,14 @@ body::before{
   filter: drop-shadow(30px 10px 4px rgb(0,0,0, .5));
 }
 
-body #spider-man-01-hovered::before{
-  background-image: url("../images/pic-sm-bg-01.jpg");
+body#spider-man-01-hovered::before{
+  background-image: url('/assets/images/pic-sm-bg-01.jpg');
 }
-body #spider-man-02-hovered::before{
-  background-image: url("../images/pic-sm-bg-02.jpg");
+body#spider-man-02-hovered::before{
+  background-image: url('/assets/images/pic-sm-bg-02.jpg');
 }
-body #spider-man-03-hovered::before{
-  background-image: url("../images/pic-sm-bg-03.jpg");
+body#spider-man-03-hovered::before{
+  background-image: url('/assets/images/pic-sm-bg-03.jpg');
 }
 
 body[id^='spider-man']::before{

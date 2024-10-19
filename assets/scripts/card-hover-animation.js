@@ -1,6 +1,6 @@
 function handleMouseEnter(){
   this.classList.add('s-card--hovered')
-  document.body.id = `${this.id}--hovered`
+  document.body.id = `${this.id}-hovered`
 }
 
 function handleMouseLeave(){
