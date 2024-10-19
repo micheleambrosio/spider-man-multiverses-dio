@@ -57,6 +57,7 @@ body::before{
   object-fit: cover;
   position: absolute;
   opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 .s-card__image{
@@ -64,6 +65,7 @@ body::before{
   height: 100%;
   object-fit: contain;
   position: relative;
+  transition: 1s ease-in-out;
 }
 
 .s-card__title{
@@ -73,4 +75,55 @@ body::before{
   position: absolute;
   width: 100%;
   bottom: 0;
+}
+
+.s-controller{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.s-controller__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: var(--primary-color);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.s-controller__button:hover{
+  transform: scale(1.1);
+}
+
+.s-controller__button:nth-child(2){
+  margin: 0 3.75rem;
+}
+
+.s-controller__line{
+  background-color: white;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+}
+
+/*MouseEnter (hovered) animação*/
+.s-card--hovered .s-card__background{
+  cursor: pointer;
+  opacity: 0;
+
+}
+
+.s-card--hovered .s-card__image{
+  transform: scale(1.4);
 }
