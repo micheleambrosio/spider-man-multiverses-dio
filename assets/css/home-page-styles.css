@@ -36,3 +36,41 @@ body::before{
   margin: 0 1.25rem;
   vertical-align: middle;
 }
+
+.s-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.s-card{
+ border: 0.5rem solid white;
+ width: calc(100% / 3 - 8%);
+ height: 70vh;
+ position: relative; 
+}
+
+.s-card__background{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 1;
+}
+
+.s-card__image{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+.s-card__title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
