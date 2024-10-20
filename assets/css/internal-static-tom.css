@@ -7,13 +7,8 @@
 
 .s-wrapper{
   display: flex;
-  height: 120vh;
+  height: 140vh;
   flex-flow: row nowrap;
-}
-
-.s-wrapper video{
-  position: fixed;
-  width: 100%;
 }
 
 .s-wrapper .s-left-column{
@@ -34,6 +29,8 @@
   height: 100%;
   padding-left: 130px;
   position: relative;
+  background-image: url('../../assets/images/spiderman-tom/movie-01/background.png');
+  background-size: cover;
 }
 
 .s-wrapper .s-main-content__top{
@@ -48,7 +45,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: -34px;
+  margin-top: 30px;
 }
 
 .s-wrapper .s-main-content .s-logo{
