@@ -1,38 +1,17 @@
-.navigator {
+@import url('reset.css');
+@import url('global.css');
+
+.navigator{
   height: 80vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   position: relative;
 }
 
-.navigator ul li {
-  margin: 60px 0;
-}
-
-.navigator ul li:first-child {
-  margin-top: 0;
-}
-
-.navigator ul li:last-child {
-  margin-bottom: 0;
-}
-
-.navigator ul li a{
-  color: white;
-  border: solid 2px white;
-  width:45px;
-  height:45px;
-  border-radius: 50%;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navigator::before {
-  content: '';
+.navigator::before{
+  content: "";
   position: absolute;
   top: 0;
   width: 2px;
@@ -41,17 +20,45 @@
   z-index: 0;
 }
 
+
 .navigator ul{
   z-index: 1;
 }
 
-.navigator ul li a:hover, 
-.navigator ul li a.active {
+.navigator ul li{
+  margin: 60px 0;
+}
+
+.navigator ul li:first-child{
+  margin: 0;
+}
+.navigator ul li:last-child{
+  margin: 0;
+}
+
+.navigator ul li a{
+  color: white;
+  border: 2px solid white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigator ul li a:hover, .navigator ul li a:active{
   color: var(--primary-color);
   background-color: white;
 }
 
-.navigator .navigator__icon{
+.navigator .navigator__icon img{
   position: absolute;
   top: -20px;
+  transition: transform 0.3s ease;
+}
+
+.navigator__icon img:hover {
+  transform: scale(1.1);
 }

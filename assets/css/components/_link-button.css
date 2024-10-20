@@ -1,34 +1,43 @@
-a.link-button{
-  display: flex;
+a.link-button {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  padding: 12px 24px; 
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 66px; 
+  border: 2px solid white;
+  font-size: 18px; 
+  font-weight: bold; 
+  transition: 1.75s;
 }
 
-a.link-button .icon{
+a.link-button .icon {
   width: 32px;
   height: 32px;
-  padding: 3px;
-  background-color: var(--primary-color);
-  border: solid 1px white;
-  background-clip: content-box;
-  border-radius: 50%;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--primary-color); 
+  color: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 10px; /
 }
 
-a.link-button .icon .play-icon{
-  border:solid 7px white;
-  width:0;
+a.link-button .icon .play-icon {
+  width: 0;
   height: 0;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  margin-right: -7px;
+  border-left: 10px solid white; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
 }
 
 a.link-button .label{
   margin-left: 10px;
+  color: var(--primary-color);
+}
+
+a:hover{
+  background-color: white;
+  color: var(--primary-color);
 }
