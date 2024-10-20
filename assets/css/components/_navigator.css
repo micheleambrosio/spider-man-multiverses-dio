@@ -20,6 +20,7 @@
   z-index: 0;
 }
 
+
 .navigator ul{
   z-index: 1;
 }
@@ -52,7 +53,12 @@
   background-color: white;
 }
 
-.navigator .navigator__icon{
+.navigator .navigator__icon img{
   position: absolute;
   top: -20px;
+  transition: transform 0.3s ease;
+}
+
+.navigator__icon img:hover {
+  transform: scale(1.1);
 }
