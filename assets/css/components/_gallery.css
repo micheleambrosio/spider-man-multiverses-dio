@@ -6,6 +6,7 @@
 .gallery ul{
   display: flex;
   flex-direction: row;
+  
 }
 
 .gallery ul li{

@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../assets/css/internal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
   <title>Tobey Maquiere</title>
 </head>
 <body>
   <!--Barra lateral-->
   <div class="s-wrapper">
+
     <div class="s-left-column">
       <nav class="navigator">
 
@@ -29,9 +31,10 @@
     </div>
 
     <!--Conteudo Geral e Principal-->
-    <div class="s-main-content">
+    <div class="s-main-content s-spiderman-01-01">
       <!--Logo-->
       <div class="s-main-content__top">
+        <!--Logo Letreiro-->
         <div class="s-logo">
           <img src="../../assets/images/spiderman-tom/movie-01/logo.png" alt="Filme Homem-Aranha 2002">
         </div>
@@ -56,9 +59,7 @@
         <ul>
           <li>
             <a href="https://youtu.be/x5Q0AzHr3FM?si=DaOqrAneoop5ndD2" class="link-button" target="_blank">
-              <span class="icon">
-                <div class="play-icon">&nbsp;</div>
-              </span>
+              <span class="icon"><div class="play-icon">&nbsp;</div></span>
               <span class="label">Assistir Trailer</span>
             </a>
           </li>
@@ -66,24 +67,24 @@
       </div>
     </div>
 
-      <!--Descricao Final-->
+      <!--Galeria de Imagens-->
       <div class="s-main-content__bottom">
         <div class="gallery">
           <ul>
             <li>
-              <a href="">
+              <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg">
                 <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-01.png" alt="">
               </a>
             </li>
             
             <li>
-              <a href="">
+              <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-02-full.jpg">
                 <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-02.png" alt="">
               </a>
             </li>
 
             <li>
-              <a href="">
+              <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-03-full.jpg">
                 <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-03.png" alt="">
               </a>
             </li>
@@ -93,5 +94,7 @@
       </div>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </body>
 </html>
