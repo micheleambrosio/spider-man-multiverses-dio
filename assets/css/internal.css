@@ -5,7 +5,6 @@
 @import url('components/_link-button.css');
 @import url('components/_gallery.css');
 
-
 .s-wrapper{
   display: flex;
   height: 120vh;
